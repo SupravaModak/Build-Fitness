@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    outline: none;
+    color: white;
+    scroll-behavior: smooth;
+}
+:root{
+    --prime: rgb(4, 255, 0);
+}
+body{
+    background-color: #131b2b;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    position:absolute;
+    background-color: black;
+    justify-content: space-between;
+    padding: 23px 120px;
+    transition: 0.5s ease;
+}
+.logo{
+    font-size: 2.7rem;
+    font-weight: 860;
+    letter-spacing: -8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--prime);
+}
+.logo B{
+    color: rgb(71, 53, 226);
+}
+.navbar ol{
+    display: flex;
+    justify-content: center;
+}
+.navbar ol li{
+    list-style: none;
+    margin: 25px;
+}
+ol li a{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+ol li a:hover{
+    color: rgb(128, 136, 223);
+    border-bottom: 2px solid rgb(218, 226, 72);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.home-view{
+    width: 100%;
+    min-height: 80vh;
+    min-height: 120vh;
+    align-items: center;
+    padding-top: 120px;  
+}
+.banner{
+    height: 125%;
+    width: 100%;
+    position:absolute;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.highlights{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 100px; 
+}
+.highlights h3{
+    display: inline;
+    font-size: 2vw;
+    font-weight: 200;
+    text-transform: capitalize;
+    border-left: 6px solid var(--prime);
+    padding: 2px 10px;
+}
+.highlights h1{
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 250;
+    filter: brightness(300%);
+    color: rgb(3, 0, 103);
+    letter-spacing: 15.5px;
+    padding: 100px ;
+    padding-top: 160px;
+    padding-left: 10px;
+}
+.highlights h1 b{
+    color: var(--prime);
+    filter: brightness(100%);
+    font-weight: 800;
+    padding-left: 50px;
+    font-size: 6vw;
+    
+}
+.highlights .tagline{
+    color: white;
+    font-size: 3rem;
+    align-items: center;
+    text-align: left;
+    filter: brightness(90%);
+    padding-left: 775px;
+    padding-top: 20px;
+    margin-top:-85px;
+}
+.highlights .join{
+    position: absolute;
+    margin-top:-95px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: var(--prime);
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid var(--prime);
+    transition: 0.3 ease;
+    padding: 10px 20px;
+    letter-spacing: 1.5px;
+}
+.highlights .join:hover{
+    cursor: pointer;
+    letter-spacing: 2.3px;
+    background: var(--prime);
+    color: rgb(0, 0, 0);
+}
+.main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main h2{
+    font-size: 2.5vw;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding-top: 230px;
+}
+span{
+    color: var(--prime);
+}
+.main h6{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+.about .content .cols{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 60px;
+}
+.about .content .cols p b{
+    font-size: 20px;
+    margin-right: 2px;
+}
+.about .content .cols a{
+    position: relative;
+    top: 20px;
+    color: var(--prime);
+    background: transparent;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1.5px solid var(--prime);
+}
+.about .content .cols a:hover{
+    color: black;
+    background: var(--prime);
+}
+.about .content .cols .box{
+    position: relative;
+    height: 555px;
+    box-shadow:  0 10px 10px black;
+}
+.about .content .cols .box img{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.workout .content{
+    flex-wrap: wrap;
+}
+.workout .content .frame{
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 45px;
+    background: rgb(41, 38, 38);
+    box-shadow: 0 10px 25px black;
+}
+.workout .content .frame .box{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.workout .content .frame .box img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter:brightness(75%);
+    transition: 0.3s ease-in;
+}
+.workout .content .frame .box:hover img{
+     filter: brightness(95%);
+     transform: scale(1.05);
+}
+.workout .content .frame .title{
+    color: var(--prime);
+    padding: 6px 0px;
+    font-size: 1.2rem;
+}
+.workout .content .frame p{
+    font-size: 0.9rem;
+}
+.trainers .content{
+    flex-wrap: wrap;
+}
+.trainers .content .frame{
+    position: relative;
+    width: 500px;
+    margin: 30px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 20px black;
+}
+.trainers .content .frame .box{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.trainers .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(4);
+    transition: 0.3s ease-in;
+}
+.trainers .content .frame .box:hover img{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+.trainers .content .frame .headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+.trainers .content .frame .headline i{
+    height: 25px;
+    width: 25px;
+    border:  1.5px solid white;
+    border-radius: 30%;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+    line-height: 25px;
+}
+.trainers .content .frame .headline i:hover{
+        border: 1.5px solid var(--prime);
+        background: var(--prime);
+}
+.trainers .content .frame .title{
+    color: var(--prime);
+    font-size: 1.2rem;
+}
+.trainers .content .frame p{
+    font-size: 0.8rem;
+    position: relative;
+}
+.trainers .content .frame a{
+    top:20px;
+    color: var(--prime);
+    background: transparent;
+    border: 1.5px solid var(--prime);
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+    position: relative;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+.trainers .content .frame a:hover{
+    background: var(--prime);
+    color: black;
+}
+.diet .content{
+    flex-direction: column;
+}
+.diet .content .row{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.diet .content .row:nth-child(odd) .a{
+    order: 2;
+}
+.diet .content .row .cols{
+    position: relative;
+    width: 600px;
+    padding: 20px 50px;
+}
+.diet .content .row .cols .heading{
+    font-size: 2em;
+    color: orange;
+}
+.diet .content .row:nth-child(odd) .cols .heading{
+    color: rgb(0, 89, 255);
+}
+.diet .content .row .cols .boxes{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 10px 15px black;
+}
+.diet .content .row .cols .boxes img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .content{
+    min-height: 100vh;
+}
+.contact .content form{
+    margin: 60px 0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    background: white;
+    box-shadow:  0 10px 15px black;
+    z-index:11;
+}
+.contact .content form input{
+    color: #222;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #878787;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+}
+.contact .content form textarea{
+    width: 100%;
+    padding :10px;
+    color: #222;
+    font-size: 18px;
+    border: 1px solid #878787;
+    margin: 15px 0;
+    background: transparent;
+    border-radius: 4px;
+}
+.contact .content form input:focus,
+.contact .content form textarea:focus{
+    border: 3px solid var(--prime);
+    transition: 0.1s ease;
+}
+.contact .content form .btn{
+    letter-spacing: 2px;
+    width: 100px;
+    display: inline-block;
+    color: rgb(11, 169, 11);
+    border-color: var(--prime);
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 2px solid black;
+}
+.contact .content form .btn:hover{
+    background: var(--prime);
+    color: black;
+}
+.contact .content .bgimg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background: url(bgimg.jpg);
+    background-position: center;
+    filter: brightness(20%);
+}
+@media screen and (max-width: 980px){
+    .navbar{
+        padding: 11px 60px;
+    }
+    .navbar ol{
+        display: none;
+
+    }
+    .navbar .toggle{
+        height: 25px;
+        width: 25px;
+        margin: auto 0;
+        cursor: pointer;
+        background: url(menubar.jpg);
+        background-position: center;
+        background-size: cover;
+        filter:invert(1);
+        background-repeat: no-repeat;
+    }
+    .navbar .toggle.active{
+        background: url(close.png);
+        background-size: 40px;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+    }
+    .navbar ol.active{
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background: rgb(34, 32, 32);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100% - 60px);
+        z-index: 11;
+    }
+    .banner{
+        top: 80px;
+    }
+    .navbar ol.active li{
+        margin: 8px;
+    }
+    .navbar ol.active li a{
+        font-size: 25px;
+    }
+    .highlights h3{
+        font-size: 3vw;
+        padding: 5px 10px;
+        border-left: 3px solid var(--prime);
+    }
+    .highlights h1{
+        font-size: 12vw;
+        padding: 12px;
+    }
+    .highlights .join{
+        border: 1px solid var(--prime);
+        font-size: 1.9vw;
+    }
+    .main h2{
+        font-size: 1.5rem;
+    }
+    .highlights .tagline{
+        padding-left:450px;
+        padding-top: 120px;
+    }
+    .main h6{
+        font-size: 10px;
+    }
+    .about .content{
+        flex-direction: column;
+    }
+    .workout .content .frame{
+        padding: 20px;
+        width: 290px;
+        margin: 20px;
+    }
+    .trainers .content .frame{
+        width: 320px;
+        padding:15px 15px 40px 15px;
+        margin: 10px ;
+    }
+    .trainers .content .frame .box{
+        height: 200px;
+    }
+    .diet .content .row{
+        flex-direction: column;
+    }
+    .diet .content .row:nth-child(odd) .a{
+        order: 0;
+    }
+}
