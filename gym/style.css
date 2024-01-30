@@ -466,6 +466,7 @@ span{
     .highlights h1{
         font-size: 12vw;
         padding: 12px;
+        padding-left: -10px;
     }
     .highlights .join{
         border: 1px solid var(--prime);
