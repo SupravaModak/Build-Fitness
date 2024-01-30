@@ -475,8 +475,9 @@ span{
         font-size: 1.5rem;
     }
     .highlights .tagline{
-        padding-left:270px;
-        padding-top: 150px;
+        padding-left:190px;
+        padding-top: 190px;
+        font-size: 46px;
     }
     .main h6{
         font-size: 10px;
